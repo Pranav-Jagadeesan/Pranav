@@ -1,0 +1,78 @@
+\\SQUARE OF A NUMBER
+#include <stdio.h>
+#define square(x) ((x) * (x))
+int main() 
+{
+    int y;
+    int z;
+    printf("ENTER A NUMBER:  ");
+    scanf("%d", &z);
+    y = square(z);
+    printf("The square is: %d\n", y); 
+    return 0;
+}
+
+\\DISPLAYING GREATERNUMBER
+#include <stdio.h>
+#define N1 10
+#define N2 12
+int main() {
+#if N1 > N2
+    printf("The greatest number is: %d\n", N1);
+#else
+    printf("The greatest number is: %d\n", N2);
+#endif
+
+\\DISPLAYING LOWER NUMBER
+#include <stdio.h>
+#define N1 10
+#define N2 12
+int main() {
+    
+#if N1 > N2
+    printf("The lowest number is: %d\n", N2);
+#else
+    printf("The lowest number is: %d\n", N1);
+#endif
+
+    return 0;
+}
+
+    return 0;
+}
+
+\\DISPLAYING WHETHER THE NUMBER IS EVEN OR ODD
+
+#include <stdio.h>
+#define check(n) ((n) % 2 == 0)
+int main() {
+    int i;
+
+    printf("Enter a number: \n");
+    scanf("%d", &i);
+    if (check(i)) {
+        printf("Even number \n");
+    } else {
+        printf("Odd number \n");
+    }
+
+    return 0;
+}
+
+\\CELCIUS TO FARENHEIT CONVERSION
+
+
+#include <stdio.h>
+#define convert(c) ((c)*9/5+32)
+int main() {
+    int e;
+    int f;
+
+    printf("Enter temperature in celcius: \n");
+    scanf("%d", &e);
+    printf("Celcius: %d  \n",e);
+    f=convert(e);
+    printf("Farenheit: %d   \n",f);
+    return 0;
+}
+
