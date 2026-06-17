@@ -1,0 +1,118 @@
+\\ENUMERATION FOR DAYS AND DISPLAYING VALUE OF WED
+#include <stdio.h>
+enum day {
+    MON,
+    TUE,
+    WED,
+    THU,
+    FRI,
+    SAT,
+    SUN
+};
+
+int main() {
+    enum day S = WED;
+    printf("The value of WED is: %d\n", S);
+    return 0;
+}
+
+\\ENUMERATION FOR COLORS AND DISPLAYING INTEGER VALUES
+#include <stdio.h>
+enum Colors {
+    R,
+    G,
+    B,
+};
+int main() {
+    printf("RED: %d\n", R);
+    printf("BLUE: %d\n", B);
+    printf("GREEN: %d\n", G);
+    return 0;
+}
+
+\\ENUMERATION FOR COLORS ACCEPT VALUE FROM USER AND DISPLAYING CORRESPONDING COLOR
+#include <stdio.h>
+enum Colors {
+    R,
+    B,
+    G
+};
+
+int main() {
+    int i;
+    printf("Enter a number (0 for RED, 1 for BLUE, 2 for GREEN): ");
+    scanf("%d", &i);
+  switch (i) {
+        case R:
+            printf("You chose RED\n");
+            break;
+        case B:
+            printf("You chose BLUE\n");
+            break;
+        case G:
+            printf("You chose GREEN\n");
+            break;
+        default:
+            printf("Invalid");
+            break;
+    }
+
+    return 0;
+}
+
+\\ENUMERATION FOR MONTHS AND DISPLAYING THE VALUE OF DECEMBER
+#include <stdio.h>
+enum Months {
+    JAN = 1,
+    FEB,
+    MAR,
+    APR,
+    MAY,
+    JUN,
+    JUL,
+    AUG,
+    SEP,
+    OCT,
+    NOV,
+    DEC
+};
+
+int main() {
+    printf("The value of DEC is: %d\n", DEC);
+
+    return 0;
+}
+
+\\ENUMERATION FOR DIRECTIONS  AND DISPLAY MESSAGE BASED ON USER CHOICE
+#include <stdio.h>
+enum Directions {
+    NORTH = 1,
+    EAST,
+    SOUTH,
+    WEST
+};
+
+int main() {
+    int c;
+    printf("Enter 1-4: ");
+    scanf("%d", &c);
+	switch (c) {
+        case NORTH:
+            printf("NORTH %d\n", NORTH);
+            break;
+        case EAST:
+            printf("EAST %d\n", EAST);
+            break;
+        case SOUTH:
+            printf("SOUTH %d\n", SOUTH);
+            break;
+        case WEST:
+            printf("WEST %d\n", WEST);
+            break;
+        default:
+            printf("Invalid\n");
+            break;
+    }
+
+    return 0;
+}
