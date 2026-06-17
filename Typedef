@@ -1,0 +1,92 @@
+\\Using Typedef to create a new name for int and storing variables
+
+#include <stdio.h>
+typedef int gg;
+int main() 
+{
+    gg x = 10;
+    gg y = 20;
+    printf("x = %d, y = %d\n", x, y);
+    return 0;
+}
+
+\\Using Typedef to create a new name for float and displaying average of two numbers
+#include <stdio.h>
+
+typedef float gg;
+int main() 
+{
+    gg x = 10.1;
+    gg y = 20.1;
+    gg z = (x+y)*0.5;
+    printf("%f",z);
+    return 0;
+}
+
+\\Using Typedef to create a structure to display the details of one student
+
+#include <stdio.h>
+typedef struct {
+    int roll_no;
+    char name[50]; // Fixed: Reserved space for up to 49 characters + null terminator
+    float marks;
+} Student;
+
+int main() {
+    Student s1;
+    printf("Enter Roll Number: ");
+    scanf("%d", &s1.roll_no);
+    printf("Enter Name: ");
+    scanf("%s", s1.name);
+    printf("Enter Marks: ");
+    scanf("%f", &s1.marks);
+    printf("Roll No: %d\n", s1.roll_no);
+    printf("Name: %s\n", s1.name);
+    printf("Marks: %.2f\n", s1.marks);
+    return 0;
+}
+
+\\Using Typedef to create a structure to display the details of one employee
+
+#include <stdio.h>
+typedef struct {
+    int id_no;
+    char name[50]; // Fixed: Reserved space for up to 49 characters + null terminator
+    float salary;
+} Employee;
+
+int main() {
+    Employee s1;
+    printf("Enter id Number: ");
+    scanf("%d", &s1.id_no);
+    printf("Enter Name: ");
+    scanf("%s", s1.name);
+    printf("Enter Salary: ");
+    scanf("%f", &s1.salary);
+    printf("----------------\n");
+    printf("Id No: %d\n", s1.id_no);
+    printf("Name: %s\n", s1.name);
+    printf("Salary: %.2f\n", s1.salary);
+    return 0;
+}
+
+\\Using Typedef for an integer array of size 5 read and print he elements
+
+#include <stdio.h>
+typedef int AR[5]; 
+int main() {
+    AR arr;
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("Enter element: ");
+        scanf("%d", &arr[i]);
+    }
+    printf("Elements are:\n");
+    for (i = 0; i < 5; i++) {
+        printf("%d\n", arr[i]);
+    }
+     return 0;
+}
+
+
+
